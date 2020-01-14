@@ -6,87 +6,155 @@
     <meta name="description" content="Project #1 - Fettuccine Alfredo " />
     <meta name="author" content="@zhagm" />
 
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
-    <!-- FONTS BELOW -->
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <!-- <script src="js/scripts.js"></script> -->
-    <header>
-      <h1>Fettuccine Alfredo</h1>
-      <p class="description">
-        Fettuccine Alfredo is arguably one of the most delicious pasta dishes
-        out there. Made with just 7 simple ingredients, this easy recipe is sure
-        to wow any dinner guests. Due to the simple steps, it also makes for a
-        great evening activity. Grab a bottle of Pinot Noir, turn up some
-        soothing jazz tunes, and enjoy bonding with friends over your newfound
-        Michelin-level skills.
-      </p>
-    </header>
-    <div class="left">
-      <div id="mainImg">
-        <img
-          style="width: 500px;"
-          src="https://hips.hearstapps.com/delish/assets/17/36/1504715566-delish-fettuccine-alfredo.jpg"
-        />
-      </div>
-      <div id="ingredients">
-        <h2>Ingredients</h2>
-        <ul>
-          <li>2 - 3 cloves of garlic, minced</li>
-          <li>50g of unsalted butter</li>
-          <li>2 teaspons of all-purpose flour</li>
-          <li>A few handfuls of fresh baby spinach</li>
-          <li>A pinch of salt</li>
-          <li>100g of heavy cream</li>
-          <li>Optional: cooked protein (shrimp, chicken, tofu)</li>
-          <li>A pack of Fettuccine pasta</li>
-        </ul>
-      </div>
+    <div class="container" id="header-container">
+      <header class="pt-5 pb-3 border-bottom">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="text-muted" href="#"></a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="text-dark" id="header-title" href="#">ZMAGZ</a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="text-muted" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mx-3"
+              >
+                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+              </svg>
+            </a>
+            <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+          </div>
+        </div>
+      </header>
+      <nav class="nav d-flex justify-content-around">
+        <a class="p-2 text-muted" href="#">Home</a>
+        <a class="p-2 text-muted" href="https://github.com/zhagm/recipe-page"
+          >Source Code</a
+        >
+        <a
+          class="p-2 text-muted"
+          href="https://github.com/Techtonica/curriculum/tree/master/projects/recipe-page"
+          >Project Instructions</a
+        >
+        <a class="p-2 text-muted" href="https://twitter.com/zhag_m">Twitter</a>
+        <a class="p-2 text-muted" href="https://www.linkedin.com/in/zhag/"
+          >LinkedIn</a
+        >
+      </nav>
     </div>
-    <div class="right">
-      <div id="steps">
-        <h2>Steps:</h2>
-        <ol>
-          <li>Fry the garlic in the butter.</li>
-          <li>
-            Add the flour and continue to stir, allowing the garlic and flour to
-            fry in the butter.
-          </li>
-          <li>Add the spinach and stir.</li>
-          <li>
-            Sprinkle in a pinch of salt and mix in the heavy cream, allowing the
-            mixture to simmer.
-          </li>
-          <li>
-            Gauge the consistency of the cream; if it's too thick add some
-            water, if it's too thin allow it to cook and evaporate.
-          </li>
-          <li>
-            Optionally, you can add a protein in - shrimp, chicken, tofu, any of
-            these would make great additions.
-          </li>
-        </ol>
-      </div>
-      <div id="links">
-        <h2>Similar Recipes</h2>
-        <ul>
-          <li>
-            <a
-              href="https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/"
-              >To Die for Fettuccine Alfredo</a
-            >
-          </li>
-          <li>
-            <a href="https://www.modernhoney.com/fettuccine-alfredo/"
-              >Modern Honey's Recipe</a
-            >
-          </li>
-        </ul>
+    <div class="container pt-3">
+      <div class="row">
+        <div class="col-sm-9" id="main-content">
+          <h1>Fettuccine Alfredo</h1>
+          <p class="description">
+            Fettuccine Alfredo is arguably one of the most delicious pasta
+            dishes out there. Made with just 7 simple ingredients, this easy
+            recipe is sure to wow any dinner guests. Due to the simple steps, it
+            also makes for a great evening activity. Grab a bottle of Pinot
+            Noir, turn up some soothing jazz tunes, and enjoy bonding with
+            friends over your newfound Michelin-level skills.
+          </p>
+          <div id="mainImg">
+            <img
+              src="https://hips.hearstapps.com/delish/assets/17/36/1504715566-delish-fettuccine-alfredo.jpg"
+            />
+          </div>
+          <div class="row pt-4">
+            <div class="col-sm-3 border-right" id="ingredients">
+              <h2>Ingredients</h2>
+              <ul class="pl-4">
+                <li>2 - 3 cloves of garlic, minced</li>
+                <li>50g of unsalted butter</li>
+                <li>2 teaspons of all-purpose flour</li>
+                <li>A few handfuls of fresh baby spinach</li>
+                <li>A pinch of salt</li>
+                <li>100g of heavy cream</li>
+                <li>Optional: cooked protein (shrimp, chicken, tofu)</li>
+                <li>A pack of Fettuccine pasta</li>
+              </ul>
+            </div>
+            <div class="col-sm-8">
+              <div id="steps">
+                <h2>Steps:</h2>
+                <ol>
+                  <li>Fry the garlic in the butter.</li>
+                  <li>
+                    Add the flour and continue to stir, allowing the garlic and
+                    flour to fry in the butter.
+                  </li>
+                  <li>Add the spinach and stir.</li>
+                  <li>
+                    Sprinkle in a pinch of salt and mix in the heavy cream,
+                    allowing the mixture to simmer.
+                  </li>
+                  <li>
+                    Gauge the consistency of the cream; if it's too thick add
+                    some water, if it's too thin allow it to cook and evaporate.
+                  </li>
+                  <li>
+                    Optionally, you can add a protein in - shrimp, chicken,
+                    tofu, any of these would make great additions.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="mt-4" id="links">
+              <h2>Similar Recipes</h2>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.allrecipes.com/recipe/23431/to-die-for-fettuccine-alfredo/"
+                    >To Die for Fettuccine Alfredo</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.modernhoney.com/fettuccine-alfredo/"
+                    >Modern Honey's Recipe</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 border-left">
+          <h1>Dummy</h1>
+          <p class="description">
+            DUMMY INFO
+          </p>
+        </div>
       </div>
     </div>
   </body>
